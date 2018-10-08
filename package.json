@@ -7,6 +7,9 @@
   "engines": {
     "node": ">=0.10"
   },
+  "bin": {
+    "validator": "cli/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/validator/validator.git"
@@ -30,5 +33,11 @@
   "files": [
     "build/dist/vnu.jar",
     "vnu-jar.js"
-  ]
+  ],
+  "dependencies": {
+    "commander": "^2.18.0"
+  },
+  "scripts": {
+    "test": "validator -v"
+  }
 }
